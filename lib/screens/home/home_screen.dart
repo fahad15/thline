@@ -4,6 +4,8 @@ import 'package:the_line/models/theme.dart';
 import 'package:the_line/screens/home/home_controller.dart';
 import 'package:the_line/screens/profile/profile_screen.dart';
 
+import '../main_rappi_concept.dart';
+
 class HomeScreen extends GetWidget<HomeController> {
   int currentIndex = 0;
 
@@ -30,6 +32,8 @@ class HomeScreen extends GetWidget<HomeController> {
                   // ProfileScreen(),
                   const Placeholder(),
                   ProfileScreen(),
+                  const Placeholder(),
+                  MinRappiConceptApp(),
                   Text('currentIndex1: $currentIndex'),
                   Text('currentIndex2: $currentIndex'),
                   Text('currentIndex3: $currentIndex'),

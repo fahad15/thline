@@ -8,7 +8,7 @@ class ApiRepositoryIml extends ApiRepostoryInterface {
   //اضافة مستخدميين
   @override
   Future<User> getUserFromToken(String token) async {
-    await Future.delayed(const Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 13));
     if (token == 'AA111') {
       return User(
         name: 'Steve Jobs',

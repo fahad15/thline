@@ -16,21 +16,6 @@ class PageRuotes {
 // login تبديل البروفايل الى
 class RuoteNavigationPage {
   static final pages = [
-    /* GetPage(
-      name: PageRuotes.splash,
-      page: () => SplashScreen(),
-      binding: SplashBinding(),
-    ),
-    GetPage(
-      name: PageRuotes.login,
-      page: () => LoginScreen(),
-      bindings: [MainBinding(), LoginBinding()],
-    ),
-    GetPage(
-      name: PageRuotes.home,
-      page: () => HomeScreen(),
-      binding: HomeBinding(),
-    ),*/
     GetPage(
       //تبديل البروفايل الى splash
       name: PageRuotes.splash,
@@ -40,9 +25,7 @@ class RuoteNavigationPage {
     GetPage(
       name: PageRuotes.login,
       page: () => LoginScreen(),
-      bindings: [
-        LoginBinding(),
-      ],
+      bindings: [LoginBinding()],
     ),
     GetPage(
       name: PageRuotes.home,

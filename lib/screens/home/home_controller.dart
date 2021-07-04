@@ -14,12 +14,6 @@ class HomeController extends GetxController {
   RxBool darkTheme = false.obs;
 
   @override
-  void onInit() {
-    loadCuttentTheme();
-    super.onInit();
-  }
-
-  @override
   void onReady() {
     loadUser();
     loadCuttentTheme();

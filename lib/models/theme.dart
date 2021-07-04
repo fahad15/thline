@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:the_line/screens/splash/modelanimastion/theme/harpy_theme.dart';
+import 'package:the_line/screens/splash/modelanimastion/theme/harpy_theme_data.dart';
 
 class DelivryColor {
   static final purple = Color(0xFF5117AC);
@@ -12,9 +14,17 @@ class DelivryColor {
   static final pink = Color(0xFFF5638B);
 }
 
-final deliveryGradients = [
-  DelivryColor.green,
-  DelivryColor.purple,
+List<HarpyTheme> get predefinedThemes => <HarpyTheme>[
+      HarpyTheme.fromData(crow),
+    ];
+final HarpyThemeData crow = HarpyThemeData()
+  ..name = 'crow'
+  ..backgroundColors = <int>[0xff000005, 0xff17233d]
+  ..accentColor = 0xff2196f3;
+
+List<dynamic> deliveryGradients = [
+  [0xff000005, 0xff17233d],
+  const Color(0xff2196f3),
 ];
 
 final _borderLight = OutlineInputBorder(

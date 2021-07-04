@@ -85,6 +85,7 @@ class __RappiConceptState extends State<_RappiConcept>
                 color: Colors.white,
                 height: 60,
                 child: TabBar(
+                  onTap: _bloc.onCategorySelected,
                   controller: _bloc.tabController,
                   indicatorWeight: 0.1,
                   isScrollable: true,
