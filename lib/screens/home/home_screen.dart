@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:the_line/models/theme.dart';
+import 'package:the_line/post/posts_page.dart';
 import 'package:the_line/screens/home/home_controller.dart';
 import 'package:the_line/screens/profile/profile_screen.dart';
 
@@ -25,7 +26,7 @@ class HomeScreen extends GetWidget<HomeController> {
                   const Placeholder(),
                   CartScreen(onShopping: () {}),*/
                   // const Placeholder(),
-                  // ProfileScreen(),
+                  //PostsPage(),
                   //const Placeholder(),
                   //ProfileScreen(),
                   // const Placeholder(),
@@ -34,6 +35,8 @@ class HomeScreen extends GetWidget<HomeController> {
                   ProfileScreen(),
                   const Placeholder(),
                   MinRappiConceptApp(),
+                  const Placeholder(),
+                  PostsPage(),
                   Text('currentIndex1: $currentIndex'),
                   Text('currentIndex2: $currentIndex'),
                   Text('currentIndex3: $currentIndex'),

@@ -14,16 +14,8 @@ class DelivryColor {
   static final pink = Color(0xFFF5638B);
 }
 
-List<HarpyTheme> get predefinedThemes => <HarpyTheme>[
-      HarpyTheme.fromData(crow),
-    ];
-final HarpyThemeData crow = HarpyThemeData()
-  ..name = 'crow'
-  ..backgroundColors = <int>[0xff000005, 0xff17233d]
-  ..accentColor = 0xff2196f3;
-
-List<dynamic> deliveryGradients = [
-  [0xff000005, 0xff17233d],
+final deliveryGradients = [
+  const Color(0xff000005),
   const Color(0xff2196f3),
 ];
 

@@ -32,6 +32,7 @@ dependencies:
   flare_flutter: ^3.0.0
   google_fonts: any
   get: ^3.10.2
+  dio: ^3.0.10
   shared_preferences: ^0.5.10
   intl: ^0.17.0
   flutter_bloc: ^6.1.3
