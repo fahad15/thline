@@ -30,9 +30,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   provider: ^4.3.1
   flare_flutter: ^3.0.0
+  flutter_staggered_grid_view: ^0.4.0
   google_fonts: any
   get: ^3.10.2
-  dio: ^3.0.10
+  
+  http: ^0.12.2
   shared_preferences: ^0.5.10
   intl: ^0.17.0
   flutter_bloc: ^6.1.3

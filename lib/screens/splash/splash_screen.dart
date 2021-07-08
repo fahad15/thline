@@ -92,6 +92,7 @@ class SplashScreen extends GetWidget<SplashController> {
       child: FlareActor(
         'assets/flare/harpy_logo.flr',
         animation: 'show',
+        color: Colors.white,
       ),
     );
   }
@@ -150,8 +151,10 @@ class SplashScreen extends GetWidget<SplashController> {
     const Color(0xff6b99ff);
     backgroundColors = [
       // Color(0xff17233d),
-      Color(0xff000005),
-      Color(0xff17233d),
+      //Color(0xff000005),
+      // Color(0xff17233d),
+      const Color(0xff341a3d),
+      const Color(0xff43224f),
       //Color(0xff6b99ff),
     ];
     final MediaQueryData mediaQuery = MediaQuery.of(context);
@@ -182,7 +185,7 @@ class SplashScreen extends GetWidget<SplashController> {
     return LinearGradient(
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter,
-      colors: backgroundColors.length > 2
+      colors: backgroundColors.length > 0
           ? backgroundColors
           : <Color>[
               backgroundColors.first,

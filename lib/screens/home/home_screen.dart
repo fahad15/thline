@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:the_line/models/theme.dart';
-import 'package:the_line/post/posts_page.dart';
+
 import 'package:the_line/screens/home/home_controller.dart';
+import 'package:the_line/screens/products/productsScreen.dart';
 import 'package:the_line/screens/profile/profile_screen.dart';
 
 import '../main_rappi_concept.dart';
@@ -21,27 +22,20 @@ class HomeScreen extends GetWidget<HomeController> {
               () => IndexedStack(
                 index: controller.indexSelected.value,
                 children: [
-                  /*
+                  //const Placeholder(),
+                  MinRappiConceptApp(),
+
+                  //const Placeholder(),
                   ProductsScreen(),
-                  const Placeholder(),
-                  CartScreen(onShopping: () {}),*/
-                  // const Placeholder(),
-                  //PostsPage(),
+                  //const Placeholder(),
+                  ProfileScreen(),
+                  //const Placeholder(),
+                  ProfileScreen(),
                   //const Placeholder(),
                   //ProfileScreen(),
-                  // const Placeholder(),
-                  // ProfileScreen(),
-                  const Placeholder(),
-                  ProfileScreen(),
-                  const Placeholder(),
-                  MinRappiConceptApp(),
-                  const Placeholder(),
-                  PostsPage(),
-                  Text('currentIndex1: $currentIndex'),
-                  Text('currentIndex2: $currentIndex'),
-                  Text('currentIndex3: $currentIndex'),
-                  Text('currentIndex4: $currentIndex'),
-                  Text('currentIndex5: $currentIndex'),
+                  //const Placeholder(),
+                  //ProductsScreen(),
+                  //const Placeholder(),
                 ],
               ),
             ),
@@ -104,30 +98,30 @@ class _DeliveryNavigation extends StatelessWidget {
               ////onPressed: () => onIndexSelected(1),
               //),
               Material(
+                child: IconButton(
+                  icon: Icon(
+                    Icons.store,
+                    color: index == 1
+                        ? DelivryColor.green
+                        : DelivryColor.lightGrey,
+                  ),
+                  onPressed: () => onIndexSelected(1),
+                ),
+              ),
+
+              Material(
                 child: CircleAvatar(
                   backgroundColor: DelivryColor.purple,
                   radius: 23,
                   child: IconButton(
                     icon: Icon(
-                      Icons.store,
-                      color: index == 1
+                      Icons.shopping_basket,
+                      color: index == 2
                           ? DelivryColor.green
                           : DelivryColor.lightGrey,
                     ),
-                    onPressed: () => onIndexSelected(1),
+                    onPressed: () => onIndexSelected(2),
                   ),
-                ),
-              ),
-
-              Material(
-                child: IconButton(
-                  icon: Icon(
-                    Icons.shopping_basket,
-                    color: index == 2
-                        ? DelivryColor.green
-                        : DelivryColor.lightGrey,
-                  ),
-                  onPressed: () => onIndexSelected(2),
                 ),
               ),
               Material(

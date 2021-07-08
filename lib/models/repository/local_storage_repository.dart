@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:the_line/models/user.dart';
 
 abstract class LocalRepositoryInterface {

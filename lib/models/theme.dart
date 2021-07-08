@@ -15,8 +15,10 @@ class DelivryColor {
 }
 
 final deliveryGradients = [
-  const Color(0xff000005),
-  const Color(0xff2196f3),
+  //const Color(0xff000005),
+  //const Color(0xff2196f3),
+  const Color(0x9C51B6),
+  const Color(0X5946B2),
 ];
 
 final _borderLight = OutlineInputBorder(

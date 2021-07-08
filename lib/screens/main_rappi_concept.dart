@@ -1,7 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:the_line/models/rappi_data.dart';
 import 'package:the_line/models/rippi_bloc.dart';
+import 'package:the_line/screens/home/home_controller.dart';
 
 const _backgroundColor = Color(0xFFF6F9FA);
 const _buleColor = Color(0XFF0D1863);
@@ -10,12 +12,10 @@ const categoryHeight = 55.0;
 const productHeight = 110.0;
 
 class MinRappiConceptApp extends StatelessWidget {
+  //final controller = Get.find<HomeController>();
   @override
   Widget build(BuildContext context) {
-    return Theme(
-      data: ThemeData.light(),
-      child: _RappiConcept(),
-    );
+    return _RappiConcept();
   }
 }
 
