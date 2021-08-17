@@ -38,7 +38,7 @@ class ProfileScreen extends StatelessWidget {
                           Container(
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: DelivryColor.green,
+                              color: Theme.of(context).accentColor,
                             ),
                             child: Padding(
                               padding: const EdgeInsets.all(4.0),
@@ -55,8 +55,10 @@ class ProfileScreen extends StatelessWidget {
                             child: Text(
                               user.name,
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Theme.of(context).accentColor),
+                                fontWeight: FontWeight.bold,
+                                //color: DelivryColor.green),
+                                //Theme.of(context).accentColor),
+                              ),
                             ),
                           ),
                         ],
@@ -81,8 +83,9 @@ class ProfileScreen extends StatelessWidget {
                                     Text(
                                       'prsonal',
                                       style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Theme.of(context).accentColor),
+                                        fontWeight: FontWeight.bold,
+                                        //color: Theme.of(context).accentColor),
+                                      ),
                                       textAlign: TextAlign.center,
                                     ),
                                     const SizedBox(

@@ -45,7 +45,7 @@ final _borderDark = OutlineInputBorder(
 
 final lightTheme = ThemeData(
   appBarTheme: AppBarTheme(
-    color: DelivryColor.purple,
+    color: DelivryColor.grey,
   ),
   canvasColor: DelivryColor.white,
   bottomAppBarColor: DelivryColor.veryLightGrey,
@@ -71,12 +71,12 @@ final lightTheme = ThemeData(
 
 final darkTheme = ThemeData(
   appBarTheme: AppBarTheme(
-    color: DelivryColor.purple,
+    color: DelivryColor.grey,
   ),
   bottomAppBarColor: Colors.transparent,
   canvasColor: DelivryColor.grey,
   scaffoldBackgroundColor: DelivryColor.dark,
-  accentColor: DelivryColor.white,
+  accentColor: DelivryColor.grey,
   textTheme: GoogleFonts.poppinsTextTheme().apply(
     bodyColor: DelivryColor.green,
     displayColor: DelivryColor.green,
