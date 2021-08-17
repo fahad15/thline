@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:the_line/screens/splash/modelanimastion/theme/harpy_theme.dart';
-import 'package:the_line/screens/splash/modelanimastion/theme/harpy_theme_data.dart';
 
 class DelivryColor {
   static final purple = Color(0xFF5117AC);
-  static final green = Color(0xFF20D0C4);
-  static final dark = Color(0xFF03091E);
+  //static final purple = Color(0xFFD7BA7B);
+  //static final green = Color(0xFF20D0C4);
+  static final green = Color(0xFFD7BA7B);
+  //static final dark = Color(0xFF03091E);
+  //static final dark = Color.fromRGBO(58, 66, 86, 1.0);
+  static final dark = Color(0xFF35384B);
   static final grey = Color(0xFF212738);
+  static final textfild = Color.fromRGBO(244, 243, 243, 1);
+  //static final grey = Color.fromRGBO(64, 75, 96, .9);
   static final lightGrey = Color(0xFFBBBBBB);
   static final veryLightGrey = Color(0xFFF3F3F3);
   static final white = Color(0xFFFFFFFF);
@@ -15,10 +19,10 @@ class DelivryColor {
 }
 
 final deliveryGradients = [
-  //const Color(0xff000005),
-  //const Color(0xff2196f3),
-  const Color(0x9C51B6),
-  const Color(0X5946B2),
+  const Color(0xff000005),
+  const Color(0xff2196f3),
+  //const Color(0x9C51B6),
+  // const Color(0X5946B2),
 ];
 
 final _borderLight = OutlineInputBorder(

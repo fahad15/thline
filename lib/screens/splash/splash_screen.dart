@@ -45,7 +45,8 @@ class SplashScreen extends GetWidget<SplashController> {
         child: HarpyButton.flat(
             icon: Icon(
               CupertinoIcons.info,
-              color: theme.textTheme.bodyText1.color.withOpacity(.8),
+              // color: theme.textTheme.bodyText1.color.withOpacity(.8),
+              color: Colors.white,
             ),
             padding: const EdgeInsets.all(16),
             onTap: () {}
@@ -59,7 +60,9 @@ class SplashScreen extends GetWidget<SplashController> {
     //
     return const Align(
       alignment: Alignment.bottomCenter,
-      child: SecondaryHeadline('welcome to'),
+      child: SecondaryHeadline(
+        'welcome to',
+      ),
     );
   }
 

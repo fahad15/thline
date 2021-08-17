@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:the_line/models/repository/local_storage_repository.dart';
 import 'package:the_line/models/user.dart';

@@ -43,7 +43,7 @@ class __RappiConceptState extends State<_RappiConcept>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: _backgroundColor,
+      //backgroundColor: _backgroundColor,
       body: SafeArea(
         child: AnimatedBuilder(
           animation: _bloc,
@@ -51,7 +51,7 @@ class __RappiConceptState extends State<_RappiConcept>
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                color: Colors.white,
+                //color: Colors.white,
                 height: 90,
                 child: Padding(
                   padding: const EdgeInsets.all(30.0),
@@ -61,7 +61,7 @@ class __RappiConceptState extends State<_RappiConcept>
                       Text(
                         'Home page',
                         style: TextStyle(
-                          color: _buleColor,
+                          // color: Theme.of(context).accentColor,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
@@ -70,19 +70,43 @@ class __RappiConceptState extends State<_RappiConcept>
                         backgroundColor: _greenColor,
                         radius: 16,
                         child: ClipOval(
-                            // child: Image.asset(
-                            // 'assets/',
-                            // height: 30,
-                            // fit: BoxFit.cover,
-                            ),
+                          child: Image.asset(
+                            'assets/logo.jpg',
+                            height: 30,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
                       ),
-                      // )
                     ],
                   ),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 30,
+                ),
+                child: TextField(
+                  //style: TextStyle(color: Colors.white),
+                  decoration: InputDecoration(
+                      prefixIcon: Icon(
+                        Icons.search,
+                        color: Color(0xff52555a),
+                      ),
+                      hintText: "Find Your Coffee...",
+                      hintStyle: TextStyle(
+                        color: Color(0xff52555a),
+                      ),
+                      //fillColor: Color(0xff141921),
+                      filled: true,
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide.none,
+                        borderRadius: BorderRadius.circular(10.0),
+                      )),
+                ),
+              ),
               Container(
-                color: Colors.white,
+                // color: Colors.white,
                 height: 60,
                 child: TabBar(
                   onTap: _bloc.onCategorySelected,
@@ -124,13 +148,14 @@ class _RappiTabWidget extends StatelessWidget {
     return Opacity(
       opacity: selected ? 1 : 0.5,
       child: Card(
+        color: Theme.of(context).canvasColor,
         elevation: selected ? 6 : 0,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
             tabCategory.category.name,
             style: TextStyle(
-              color: _buleColor,
+              //color: Theme.of(context).accentColor,
               fontWeight: FontWeight.bold,
               fontSize: 13,
             ),
@@ -153,7 +178,7 @@ class _RappiCategoryItem extends StatelessWidget {
       child: Text(
         category.name,
         style: TextStyle(
-          color: _buleColor,
+          //color: Theme.of(context).accentColor,
           fontSize: 20,
           fontWeight: FontWeight.bold,
         ),
@@ -174,8 +199,9 @@ class _RappiProductItem extends StatelessWidget {
         //في حالة التغيير
         padding: const EdgeInsets.symmetric(vertical: 5),
         child: Card(
+            color: Theme.of(context).canvasColor,
             elevation: 6,
-            //  shadowColor: Colors.black54,
+            shadowColor: Colors.black54,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
@@ -183,7 +209,7 @@ class _RappiProductItem extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(10.0),
-                  //child: Image.asset(product.image),
+                  child: Image.asset(product.image),
                 ),
                 const SizedBox(
                   width: 10,
@@ -196,7 +222,7 @@ class _RappiProductItem extends StatelessWidget {
                       Text(
                         product.name,
                         style: TextStyle(
-                          color: _buleColor,
+                          //color: Theme.of(context).accentColor,
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                         ),
@@ -208,7 +234,7 @@ class _RappiProductItem extends StatelessWidget {
                         product.description,
                         maxLines: 2,
                         style: TextStyle(
-                          color: _buleColor,
+                          color: Theme.of(context).accentColor,
                           fontSize: 10,
                           // fontWeight: FontWeight.bold,
                         ),
