@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:the_line/HomeSecreen/model/HomePage.dart';
 import 'package:the_line/models/theme.dart';
 
 import 'package:the_line/screens/home/home_controller.dart';
@@ -24,7 +25,7 @@ class HomeScreen extends GetWidget<HomeController> {
                 children: [
                   //const Placeholder(),
                   MinRappiConceptApp(),
-
+                    HomePage(),
                   //const Placeholder(),
                   ProductsScreen(),
                   //const Placeholder(),
