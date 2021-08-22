@@ -6,7 +6,7 @@ import 'custom_rect_tween.dart';
 import 'hero_dialog_route.dart';
 import 'styles.dart';
 
-/// {@template add_todo_button}
+// {@template add_todo_button}
 /// Button to add a new [Todo].
 ///
 /// Opens a [HeroDialogRoute] of [_AddTodoPopupCard].

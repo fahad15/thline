@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage> {
         appBar: _buildBar(context),
     
     
-        backgroundColor: DelivryColor.grey,
+        //backgroundColor: DelivryColor.grey,
         //Color.fromRGBO(58, 66, 86, 1.0),
         body: Stack(
           children: [
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
   Widget _buildBar(BuildContext context) {
     return new AppBar(
       elevation: 0.1,
-      backgroundColor:DelivryColor.grey,
+      //backgroundColor:DelivryColor.grey,
       // Color.fromRGBO(58, 66, 86, 1.0),
       centerTitle: true,
       title: _appBarTitle,
@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage> {
         child: Container(
           //height: productHeight,
           decoration: BoxDecoration(
-            color: DelivryColor.dark,
+            color: Theme.of(context).canvasColor,
             //color: Color.fromRGBO(64, 75, 96, .9),
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(2),
@@ -177,14 +177,20 @@ class _HomePageState extends State<HomePage> {
               //padding: EdgeInsets.only(right: 12.0),
               decoration: new BoxDecoration(
                 border: new Border(
-                  right: new BorderSide(width: 2.0, color: Colors.white24),
+                  right: new BorderSide(width: 2.0, 
+                  //color: Colors.white24,
+                  ),
                 ),
               ),
-              child: Icon(Icons.autorenew, color: Colors.white),
+              child: Icon(Icons.autorenew, 
+              //color: Colors.white,
+              ),
             ),
             title: Text(
               records.address,
-              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                //color: Colors.white, 
+                fontWeight: FontWeight.bold),
             ),
             subtitle: Row(
               children: <Widget>[
@@ -196,7 +202,8 @@ class _HomePageState extends State<HomePage> {
                         text: TextSpan(
                           text: records.name,
                           style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold),
+                             // color: Colors.white, 
+                              fontWeight: FontWeight.bold),
                         ),
                         maxLines: 3,
                         softWrap: true,

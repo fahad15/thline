@@ -45,7 +45,7 @@ final _borderDark = OutlineInputBorder(
 
 final lightTheme = ThemeData(
   appBarTheme: AppBarTheme(
-    color: DelivryColor.grey,
+    color: DelivryColor.white,
   ),
   canvasColor: DelivryColor.white,
   bottomAppBarColor: DelivryColor.veryLightGrey,
@@ -71,7 +71,7 @@ final lightTheme = ThemeData(
 
 final darkTheme = ThemeData(
   appBarTheme: AppBarTheme(
-    color: DelivryColor.grey,
+    color: DelivryColor.dark,
   ),
   bottomAppBarColor: Colors.transparent,
   canvasColor: DelivryColor.grey,
